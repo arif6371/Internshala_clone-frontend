@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import first from "../../Assets/Firstslide.png";
 import second from "../../Assets/secondslide.webp";
 import third from "../../Assets/thirdsilde.webp";
-import fouth from "../../Assets/fourthslide.webp";
+import fourth from "../../Assets/fourthslide.webp";
 import "./home.css";
 import Job from "./Job";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 function Home() {
+  const { t, i18n } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState("Big Brands");
   const [internshipData, setInternshipData] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -61,7 +66,7 @@ function Home() {
           <img className="slide_Img ml-4" src={first} alt="" />
           <img className="slide_Img ml-4" src={second} alt="" />
           <img className="slide_Img ml-4" src={third} alt="" />
-          <img className="slide_Img ml-4" src={fouth} alt="" />
+          <img className="slide_Img ml-4" src={fourth} alt="" />
         </div>
       </div>
       <div className="flex BUttons">
