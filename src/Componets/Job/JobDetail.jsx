@@ -52,7 +52,7 @@ const text=document.getElementById("text")
       Application:id
     }
   
-    await axios.post("https://internshipbackend-vwja.onrender.com/api/application",bodyJson).then((res)=>{
+    await axios.post("https://internshala-backend-1.onrender.com/api/application",bodyJson).then((res)=>{
 
 
       
