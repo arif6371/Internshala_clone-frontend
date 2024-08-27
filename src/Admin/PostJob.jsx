@@ -52,10 +52,12 @@ function PostJOb() {
           AdditionalInfo:additionalInfo,
   
       }
-  axios.post("https://internshipbackend-vwja.onrender.com/api/job",bodyJosn).then((res)=>{
-      console.log(res.data)
-    }).catch((err)=>
-    console.log(err))
+  axios
+    .post("https://internshala-backend-1.onrender.com/api/job", bodyJosn)
+    .then((res) => {
+      console.log(res.data);
+    })
+    .catch((err) => console.log(err));
     
   }
   alert(" Internship Posted is Successfully")

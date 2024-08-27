@@ -16,13 +16,19 @@ else{
         username:username,
         password:password
     }
-    axios.post("https://internshipbackend-vwja.onrender.com/api/admin/adminLogin",bodyjson).then((res)=>{
-        console.log(res,"data is send")
-        alert("success")
-        navigate("/adminepanel")
-    }).catch((err)=>{
-        console.log(err)
-    })
+    axios
+      .post(
+        "https://internshala-backend-1.onrender.com/api/admin/adminLogin",
+        bodyjson
+      )
+      .then((res) => {
+        console.log(res, "data is send");
+        alert("success");
+        navigate("/adminepanel");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 }
     }
   return (

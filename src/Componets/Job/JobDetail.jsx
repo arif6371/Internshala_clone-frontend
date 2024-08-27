@@ -20,7 +20,9 @@ const id=params.get("q")
   const [data,setData] =useState([])
 useEffect(()=>{
    const fetchData= async()=>{
-  const response=await axios.get(`https://internshipbackend-vwja.onrender.com/api/job/${id}`)
+  const response = await axios.get(
+    `https://internshala-backend-1.onrender.com/api/job/${id}`
+  );
   
   const {company,category}=response.data;
   setCompany(company)

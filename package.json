@@ -2,7 +2,7 @@
   "name": "clint",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://internshipbackend-vwja.onrender.com/api",
+  "proxy": "https://internshala-backend-1.onrender.com/api",
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
     "@testing-library/jest-dom": "^5.17.0",

@@ -24,7 +24,9 @@ const [InternData,setInternData]=useState([])
   useEffect(()=>{
     const fetchData= async()=>{
         try {
-        const response= await axios.get(`https://internshipbackend-vwja.onrender.com/api/internship`)
+        const response = await axios.get(
+          `https://internshala-backend-1.onrender.com/api/internship`
+        );
         setInternData(response.data)
         console.log(response.data)
     } catch (error) {

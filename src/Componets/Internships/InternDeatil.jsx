@@ -32,7 +32,9 @@ function InternDeatil() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(`https://internshipbackend-vwja.onrender.com/api/internship/${id}`);
+      const response = await axios.get(
+        `https://internshala-backend-1.onrender.com/api/internship/${id}`
+      );
       setData(response.data);
 
       const { company, category } = response.data;
